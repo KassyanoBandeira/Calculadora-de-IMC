@@ -5,6 +5,10 @@ const healthWarning = document.querySelector ('.health_warning');
 const wantHide = document.querySelector ('.results_sheet');
 
 calculatorButton.onclick = calcularIMC;
+const botao = document.getElementById('botao');
+const resultado = document.querySelector('.results');
+
+botao.onclick = calcularIMC;
 
 function calcularIMC() {
     let peso = parseFloat(document.getElementById('peso').value);
@@ -48,4 +52,5 @@ function calcularIMC() {
     }
 
     wantHide.style.display = 'block';
+    resultado.textContent = imc.toFixed(2);
 }
