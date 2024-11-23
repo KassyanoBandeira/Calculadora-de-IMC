@@ -1,0 +1,177 @@
+:root {
+    --header-color: #12a2ea;
+    --main-color: #98d6f7;
+    --footer-color: #042435;
+    --main-font: "Ubuntu", sans-serif;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    
+    max-height: 300vh;
+    max-width: 300vw;
+
+    display: grid;
+    grid-template-rows: 25% 60% 15%;
+    
+    font-family: var(--main-font);
+}
+
+.header_sheet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em;
+
+    background-color: var(--header-color);
+}
+
+.title_sheet {
+    padding: 1.5rem;
+
+    font-size: 3rem;
+    font-weight: 750;
+
+    background-color: #ffffff;
+    border: 2.5px dashed var(--header-color);
+    border-radius: 0.5em;
+}
+
+.main_sheet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2.5em;
+}
+
+.data_sheet {
+    min-width: 15%;
+    max-width: 35%;
+    min-height: 50%;
+    max-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5em;
+    margin: 0 1.5em;
+
+    background-color: #ffffff;
+    border: 1.5px solid var(--main-color);
+    border-radius: 0.5em;
+    box-shadow: 15px 15px var(--main-color);
+}
+
+.txt_sheet {
+    margin-bottom: 0.5em;
+
+    font-weight: 700;
+}
+
+.input_sheet {
+    padding: 1em;
+    margin-bottom: 1.5em;
+
+    border: 1.5px solid #c9c7c6;
+    border-radius: 0.5em;
+
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.calculator_sheet {
+    padding: 1em;
+
+    background-color: #ffa500;
+    border: none;
+    border-radius: 0.5em;
+
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.calculator_sheet:hover {
+    transform: scale(1.05);
+}
+
+.results_sheet {
+    min-width: 15%;
+    max-width: 35%;
+
+    display: none;
+
+    padding: 1.5em;
+    margin: 0 1.5em;
+
+    background-color: #ffffff;
+    border: 1.5px solid;
+    border-radius: 0.5em;
+    box-shadow: 15px 15px;
+
+    font-weight: 700;
+}
+
+.results {
+    margin-bottom: 1em;
+
+    text-align: center;
+
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.warning {
+    margin-bottom: 0.5em;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+}
+
+.health_warning {
+    margin-bottom: 0.5em;
+
+    text-align: center;
+}
+
+.footer_sheet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--footer-color);
+
+    color: #ffffff;
+}
+
+.light_orange {
+    color: #FFB921;
+    border-color: #FFB921;
+    box-shadow: #FFB921;
+}
+
+.orange {
+    color: #FF9421;
+    border-color: #FF9421;
+    box-shadow: #FF9421;
+}
+
+.red_orange {
+    color: #FF6F21;
+    border-color: #FF6F21;
+    box-shadow: #FF6F21;
+}
+
+.green {
+    color: #99bf00;
+    border-color: #99bf00;
+    box-shadow: #99bf00;
+}
